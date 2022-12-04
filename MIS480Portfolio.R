@@ -19,7 +19,7 @@ par(mfrow=c(2,2))
 hist(admissions$LSAT)
 hist(admissions$GPA)
 
-#creating pie charts
+#Creating pie charts
 
 
 library(dplyr)
@@ -110,10 +110,10 @@ print(accuracy)
 
 table(testing$admit, fitted.results)
 
-#saving example data into a data frame
+#Saving example data into a data frame
 new <- data.frame(GPA=c(4), LSAT=c(160), resident=c(1), URM=c(0))
 
-#use fitted model to predict the response value for sample data
+#Using fitted model to predict the response value for sample data
 predict(LogModel, newdata=new, type="response")
 
 
